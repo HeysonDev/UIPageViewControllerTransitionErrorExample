@@ -12,7 +12,7 @@
         <!--Test View Controller-->
         <scene sceneID="jgR-0Y-uQi">
             <objects>
-                <viewController storyboardIdentifier="testingMain" id="Fb0-f5-gD4" customClass="TestViewController" customModule="Memedroid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="testingMain" id="Fb0-f5-gD4" customClass="TestViewController" customModule="PageViewControllerTransitionProblem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7vO-Mf-gsc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,22 +26,22 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAw-c6-JBr">
                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="90"/>
-                                        <color key="backgroundColor" red="0.43163579480000003" green="1" blue="0.34118790939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.8578616880213209" green="1" blue="0.52525598652653704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="90" id="pcQ-nO-r4M"/>
                                         </constraints>
-                                        <state key="normal" title="Button 1"/>
+                                        <state key="normal" title="Previous"/>
                                         <connections>
                                             <action selector="buttonClicked:" destination="Fb0-f5-gD4" eventType="touchUpInside" id="DWV-TW-0ot"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCV-aJ-Doe">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="90"/>
-                                        <color key="backgroundColor" red="1" green="0.16841727279999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.79960420818959088" green="0.79149472689100953" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="90" id="Wlc-BO-STO"/>
                                         </constraints>
-                                        <state key="normal" title="Button 2"/>
+                                        <state key="normal" title="Next"/>
                                         <connections>
                                             <action selector="button2Clicked:" destination="Fb0-f5-gD4" eventType="touchUpInside" id="hSd-pq-oXV"/>
                                         </connections>

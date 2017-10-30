@@ -17,6 +17,7 @@ class TestViewController: UIViewController,UIPageViewControllerDelegate,UIPageVi
     @IBOutlet weak var containerPager: UIView!
     
     var currentIndex = 0;
+    var clickEnabled = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,12 +43,14 @@ class TestViewController: UIViewController,UIPageViewControllerDelegate,UIPageVi
     }
     
     @IBAction func buttonClicked(_ sender: Any) {
+        guard clickEnabled else {return}
         currentIndex -= 1;
         pushViewControllerForCurrentIndex()
         
     }
     
     @IBAction func button2Clicked(_ sender: Any) {
+        guard clickEnabled else {return}
         currentIndex += 1;
         pushViewControllerForCurrentIndex()
     }
@@ -84,8 +87,11 @@ class TestViewController: UIViewController,UIPageViewControllerDelegate,UIPageVi
     
     func pushViewControllerForCurrentIndex() {
         guard let vc = getViewControllerForIndex(currentIndex) else {return}
+        print("settingViewControllers start")
+        clickEnabled = false
         pageViewController?.setViewControllers([vc], direction: .forward, animated: true, completion: { finished in
-            
+            print("setViewControllers finished")
+            self.clickEnabled = true
         })
     }
 }
